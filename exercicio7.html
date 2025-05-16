@@ -1,0 +1,187 @@
+Conversa aberta. Uma mensagem não lida.
+
+Pular para o conteúdo
+Como usar o Gmail com leitores de tela
+10 de 183
+(sem assunto)
+Caixa de entrada
+
+Kalebe Gabriel da S. Lourenço <kalebe1998@gmail.com>
+Anexos
+13 de mai. de 2025, 20:51 (há 2 dias)
+para mim
+
+
+1 anexo
+  •  Anexos verificados pelo Gmail
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+</head>
+<body>
+    <fieldset>
+    <legend>Dados Pessoais</legend>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="nome">Nome completo:</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+        </div>
+        <br>
+        <div>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+        </div>
+        <br>
+        <div>
+            <label for="telefone">Telefone (formato (XX)XXXXX-XXXX):</label><br>
+            <input type="tel" id="telefone" name="telefone" placeholder="(11)91234-5678" pattern="\(\d{2}\)\d{5}-\d{4}" required>
+        </div>
+        <br>
+        <div>
+            <label for="senha">Crie uma senha:</label><br>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+        </div>
+        <br>
+        <div>
+            <label for="idade">Idade:</label><br>
+            <input type="number" id="idade" name="idade" placeholder="Sua idade" min="1">
+        </div>
+        <br>
+        <div>
+            <label for="estado">Estado de entrega:</label><br>
+            <select id="estado" name="estado" required>
+                <option value="">--Selecione seu estado--</option>
+                <optgroup label="Norte">
+                    <option value="AC">Acre</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="PA">Pará</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="TO">Tocantins</option>
+                </optgroup>
+                <optgroup label="Nordeste">
+                    <option value="AL">Alagoas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="SE">Sergipe</option>
+                </optgroup>
+                <optgroup label="Centro-Oeste">
+                    <option value="DF">Distrito Federal</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                </optgroup>
+                <optgroup label="Sudeste">
+                    <option value="ES">Espírito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+                <optgroup label="Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="cnh">Envie uma foto da sua CNH:</label><br>
+            <input type="file" id="cnh" name="cnh" accept="image/*">
+        </div>
+    </form>
+    </fieldset>
+    <br>
+    <fieldset>
+        <form action="#" method="post">
+            <legend>Escolha o modelo:</legend>
+            <div>
+                <input type="radio" id="bydSeal" name="modelo_carro" value="BYD Seal">
+                <label for="bydSeal">BYD Seal</label>
+            </div>
+            <div>
+                <input type="radio" id="bydHan" name="modelo_carro" value="BYD Han">
+                <label for="bydHan">BYD Han</label>
+            </div>
+            <div>
+                <input type="radio" id="bydSongPlus" name="modelo_carro" value="BYD Song Plus">
+                <label for="bydSongPlus">BYD Song Plus</label>
+            </div>
+        <br>
+        <legend>Itens adicionais:</legend>
+        <div>
+            <input type="checkbox" id="somPremium" name="adicionais" value="Som Premium">
+            <label for="somPremium">Som Premium</label>
+        </div>
+        <div>
+            <input type="checkbox" id="arCondicionadoDigital" name="adicionais" value="Ar-condicionado Digital">
+            <label for="arCondicionadoDigital">Ar-condicionado Digital</label>
+        </div>
+        <div>
+            <input type="checkbox" id="camera360" name="adicionais" value="Câmera 360°">
+            <label for="camera360">Câmera 360°</label>
+        </div>
+    <br>
+    <div>
+        <label for="corCarro">Cor do carro:</label><br>
+        <input type="color" id="corCarro" name="cor_carro" value="#000000">
+    </div>
+    <br>
+    <div>
+        <label for="intensidadeBrilho">Intensidade da cor (brilho):</label><br>
+        <input type="range" id="intensidadeBrilho" name="intensidade_brilho" min="0" max="100" value="50">
+    </div>
+    <br>
+    <div>
+        <input type="submit" value="Enviar Escolha">
+    </div>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Entrega</legend>
+        
+        <label for="data">Data desejada para entrega:</label><br>
+        <input type="date" id="data" name="data"><br><br>
+        
+        <label for="hora">Hora preferida para entrega:</label><br>
+        <input type="time" id="hora" name="hora"><br><br>
+        
+        <label for="mes">Mês da compra:</label><br>
+        <input type="month" id="mes" name="mes">
+    </fieldset><br>
+
+    <fieldset>
+        <legend>Sua Opinião</legend>
+        
+        <label for="opiniao">Conte qual é a sua expectativa sobre o carro:</label><br>
+        <textarea id="opiniao" name="opiniao" rows="5" cols="50">Exemplo: Espero que o carro tenha boa autonomia, seja confortável, silencioso e impressione os vizinhos!</textarea>
+    </fieldset><br>
+
+    <fieldset>
+        <legend>Avaliação dos Modelos BYD</legend>
+        
+        <label for="dolphin">Avalie o BYD Dolphin Plus:</label><br>
+        <input type="number" id="dolphin" name="dolphin" min="0" max="5" step="0.5"><br><br>
+        
+        <label for="gs">Avalie o BYD GS:</label><br>
+        <input type="number" id="gs" name="gs" min="0" max="5" step="0.5"><br><br>
+        
+        <label for="mini">Avalie o BYD Mini:</label><br>
+        <input type="number" id="mini" name="mini" min="0" max="5" step="0.5">
+    </fieldset><br>
+
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+</form>
+</fieldset>
+</body>
+</html>
